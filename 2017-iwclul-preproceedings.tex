@@ -1,0 +1,154 @@
+\documentclass[b5paper]{book}
+
+\usepackage{polyglossia}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{expex}
+
+\usepackage{geometry}
+\usepackage{pdfpages}
+
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\newcommand\thedoi{doidoi}
+
+\fancyhf{}
+\chead{\tiny\color{blue} 
+    Proceedings of 3rd International Workshop in Computational
+    Linguistics for Uralic Languages (IWCLUL 2017); 
+    \guilsinglleft \url{http://dx.doi.org/\thedoi}\guilsinglright{}}
+\cfoot{\tiny\color{blue} 
+    \nouppercase{\rightmark} [page \thepage{} of \pageref{LastPage}]
+    \guilsinglleft \url{http://dx.doi.org/\thedoi}\guilsinglright{}}
+\setmainfont[Mapping=tex-text]{Linux Libertine}
+
+\begin{document}
+\frontmatter
+
+\cleardoublepage
+\thispagestyle{empty}
+{\centering\setlength{\parindent}{0pt}{\setlength{\parskip}{0pt}
+        {IWCLUL\par}
+        \vspace{\fill}
+        {\bfseries\Large Third International Workshop on Computational
+        Linguistics for Uralic Languages\par}
+        \vspace{29mm}
+        {\Large Proceedings of the Workshop\par}
+        \vspace{\fill}
+        {\Large January 23$^{rd}$, 2017\\
+        St. Petersburg, Russia}
+\clearpage
+}}
+
+This work is licensed under a Creative Commons Attribution–NoDerivatives
+4.0 International Licence.  Licence details:
+\url{http://creativecommons.org/licenses/by-nd/4.0/}. Page numbering and
+footers have been added by the editors.
+
+WWW address: \url{http://dx.doi.org/\thedoi}
+
+eISSN: ...
+
+DOI: (whole proceedings) \thedoi, specific articles, see footers
+
+Editors contact: \url{iwclul@googlegroups.com}
+
+\clearpage
+
+\renewcommand\thedoi{doidoi}
+
+\pagestyle{fancy}
+
+\chapter*{Preface}
+
+This is the third installment in the series of the 
+IWCLULS
+
+\noindent ---Tommi A Pirinen, Francis M. Tyers, Trond Trosterud,\\
+Conference organisers,\\
+2017, St. Petersburg
+
+\renewcommand\thedoi{doidoi}
+
+\chapter*{Organisers}
+
+\begin{itemize}
+    \item Tommi A. Pirinen, Universität Hamburg
+    \item Francis M. Tyers, UiT Norgga árktalaš universitehta
+    \item Trond Trosterud, UiT Norgga árktalaš universitehta
+\end{itemize}
+
+\renewcommand\thedoi{doidoi}
+
+\chapter*{Programme committee}
+
+\begin{itemize}
+    \item Тимофей Архангельский, Национальный исследовательский университет "Высшая школа экономики"
+    \item Марина Серафимовна Федина, Финн-йӧгра кывъяслы информатика отсӧг кузя регионкостса лаборатория
+    \item Mans Hulden, University of Colorado at Boulder
+    \item Tommi A. Pirinen, Universität Hanmburg
+    \item Jack Rueter, Helsingin yliopisto
+    \item Trond Trosterud, UiT Norgga árktalaš universitehta
+    \item Francis M. Tyers, UiT Norgga árktalaš universitehta
+\end{itemize}
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{Invited speech}
+\section{LT Estonian}
+
+
+%\includepdfset{pagecommand{}}
+
+\chapter{Tutorials}
+
+\renewcommand\thedoi{doidoi}
+\section{Some UD stuff}
+
+\chapter{Accepted Papers}
+
+\renewcommand\thedoi{doidoi}
+
+\includepdf[scale=0.9,addtotoc={
+1,section,2,Annotations schemes in North Sámi dependency parsing,sec:paper-1},
+clip,trim=0 40mm 0 40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_3.pdf}
+
+\renewcommand\thedoi{doidoi}
+
+\includepdf[scale=0.9,addtotoc={
+1,section,2,A morphological analyser for Kven,sec:paper-2},
+clip,trim=0 40mm 0 40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_9.pdf}
+
+\renewcommand\thedoi{doidoi}
+
+\includepdf[scale=0.9,addtotoc={
+1,section,2,Languages under the influence: Building a database of Uralic languages,sec:paper-3},
+clip,trim=0 40mm 0 40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_10.pdf}
+
+\renewcommand\thedoi{doidoi}
+
+\includepdf[scale=0.9,addtotoc={
+1,section,1,Language technology tools and resources for Mansi: An overview,sec:paper-4},
+clip,trim=0 40mm 0 40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_2.pdf}
+
+\renewcommand\thedoi{doidoi}
+
+\includepdf[scale=0.9,addtotoc={
+1,section,1,Synchronized Mediawiki based morphology development,sec:paper-5},
+clip,trim=0 40mm 0 40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_5.pdf}
+
+\renewcommand\thedoi{doidoi}
+
+\includepdf[scale=0.9,addtotoc={
+1,section,1,Preliminary Experiments concerning Verbal Predicative Structure Extraction from a large Finnish Corpus,sec:paper-6},
+clip,trim=0 40mm 0 40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_1.pdf}
+
+
+\end{document}
