@@ -18,14 +18,14 @@
 \newcommand\thedoi{doidoi}
 
 \fancyhf{}
-\chead{\tiny\color{blue} 
+\chead{\tiny\color{blue}
     Proceedings of 3rd International Workshop in Computational
-    Linguistics for Uralic Languages (IWCLUL 2017); 
+    Linguistics for Uralic Languages (IWCLUL 2017);
     \guilsinglleft \url{http://dx.doi.org/\thedoi}\guilsinglright{}}
-\cfoot{\tiny\color{blue} 
+\cfoot{\tiny\color{blue}
     \nouppercase{\rightmark} [page \thepage{} of \pageref{LastPage}]
     \guilsinglleft \url{http://dx.doi.org/\thedoi}\guilsinglright{}}
-\setmainfont[Mapping=tex-text]{Linux Libertine}
+\setmainfont[Mapping=tex-text]{Linux Libertine O}
 
 \begin{document}
 \frontmatter
@@ -66,7 +66,7 @@ Editors contact: \url{iwclul@googlegroups.com}
 
 \chapter*{Preface}
 
-This is the third installment in the series of the 
+This is the third installment in the series of the
 IWCLULS
 
 \noindent ---Tommi A Pirinen, Francis M. Tyers, Trond Trosterud,\\
@@ -101,16 +101,22 @@ Conference organisers,\\
 
 \mainmatter
 
-\chapter{Invited speech}
+\chapter{Invited speeches}
 \section{LT Estonian}
 
+\renewcommand\thedoi{doidoi}
+\includepdf[scale=0.9,addtotoc={
+1,section,2,The LRE Map; LR Matrices and LR Impact Factor,sec:nonpaper-1},
+clip,trim=0 40mm 0
+40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_12.pdf}
 
-%\includepdfset{pagecommand{}}
-
-\chapter{Tutorials}
+\chapter{Demos}
 
 \renewcommand\thedoi{doidoi}
-\section{Some UD stuff}
+\includepdf[scale=0.9,addtotoc={
+1,section,2, Giellatekno Open-source click-in-text dictionaries for bringing closely related languages into contact,sec:nonpaper-1},
+clip,trim=0 40mm 0
+40mm,pagecommand={\thispagestyle{fancy}},pages=-]{IWCLUL2017_paper_6.pdf}
 
 \chapter{Accepted Papers}
 
