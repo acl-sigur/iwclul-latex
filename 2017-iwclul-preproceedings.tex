@@ -14,6 +14,7 @@
 \usepackage{color}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+\usepackage{hyphenat}
 
 \newcommand\thedoi{doidoi}
 
@@ -66,20 +67,68 @@ Editors contact: \url{iwclul@googlegroups.com}
 
 \chapter*{Preface}
 
-This is the third installment in the series of the
-IWCLULS
+Uralic is an interesting group of languages from the
+computational\hyp{}linguistic perspective.  The Uralic languages share large
+parts of morphological and morphophonological complexity that is not present in
+the Indo-European language family, which has traditionally dominated
+computational-linguistic research.  This can be seen for example in number of
+morphologically complex forms belonging to one word, which in Indo-European
+languages is in range of ones or tens whereas for Uralic languages, it is in the
+range of hundreds and thousands.  Furthermore, Uralic language situations share
+a lot of geo-political aspects: the three national languages---Finnish, Estonian
+and Hungarian---are comparably small languages and only moderately resourced in
+terms of computational-linguistics while being stable and not in threat of
+extinction. The recognised minority languages of western-European states, on the
+other hand---such as North Sámi, Kven and Võro---do clearly fall in the category
+of lesser resourced and more threatened languages, whereas the majority of
+Uralic languages in the east of Europe and Siberia are close to extinction.
+Common to all rapid development of more advanced computational-linguistic
+methods is required for continued vitality of the languages in everyday life, to
+enable archiving and use of the languages with computers and other devices such
+as mobile applications.
 
-\noindent ---Tommi A Pirinen, Francis M. Tyers, Trond Trosterud,\\
+Computational linguistic Research inside Uralistics is being carried out only in
+a handful of universities, research institutes and other sites and only by
+relatively few researchers.  Our intention with organising this conference is to
+gather these researchers from scattered institutions together in order to share
+ideas and resources, and avoid duplicating efforts in gathering and enriching
+these scarce resources. We want to initiate more concentrated effort in
+collecting and improving language resources and technologies for the survival of
+the Uralic languages and hope that our effort today will become an ongoing
+tradition in the future.
+
+For the current proceedings of The Third International Workshop on Computational
+Linguistics for Uralic Languages, we accepted 10 high-quality submissions about
+topics including computational lexicography, language documentation, optical
+character recognition, dependency parsing, web-as-corpus as well as automatic
+and rule-based morphological analysis methods. The covered languages are very
+broad and reach from different Sámi languages, over Kven, Finnish, Komi, Udmurt,
+Mari, Khanty, Mansi, and Tundra Nenets. Whereas some papers describe
+language-specific research, others compare different languages or work on small
+Uralic languages in general. These contributions are all very important for the
+preservation and development of Uralic languages as well as for future
+linguistic investigations on them.
+
+The conference was organized in collaboration with The University of Oslo St.
+Petersburg Representative Office and held in St. Petersburg, Russia, on January
+23rd and 24th 2017.  The program consisted of an invited speech by Heiki-Jaan
+Kaalep, a poster session, and four  talks during the first day and an open
+discussion and individual project workshops during the second day.  The current
+proceedings include the written versions all oral and poster presentations.\\
+
+\noindent ---Tommi A Pirinen, Trond Trosterud, Francis M. Tyers, Michael Rießler\\
 Conference organisers,\\
-2017, St. Petersburg
+\today, St. Petersburg
+
 
 \renewcommand\thedoi{doidoi}
 
 \chapter*{Organisers}
 
 \begin{itemize}
-    \item Tommi A. Pirinen, Universität Hamburg
     \item Francis M. Tyers, UiT Norgga árktalaš universitehta
+    \item Michael Rießler, Albert-Ludwigs-Universität Freiburg
+    \item Tommi A. Pirinen, Universität Hamburg
     \item Trond Trosterud, UiT Norgga árktalaš universitehta
 \end{itemize}
 
@@ -88,13 +137,17 @@ Conference organisers,\\
 \chapter*{Programme committee}
 
 \begin{itemize}
-    \item Тимофей Архангельский, Национальный исследовательский университет "Высшая школа экономики"
-    \item Марина Серафимовна Федина, Финн-йӧгра кывъяслы информатика отсӧг кузя регионкостса лаборатория
-    \item Mans Hulden, University of Colorado at Boulder
-    \item Tommi A. Pirinen, Universität Hanmburg
-    \item Jack Rueter, Helsingin yliopisto
-    \item Trond Trosterud, UiT Norgga árktalaš universitehta
+    \item Eszter Simon, Magyar tudományos akadémia
     \item Francis M. Tyers, UiT Norgga árktalaš universitehta
+    \item Jack Rueter, Helsingin yliopisto
+    \item Mans Hulden, University of Colorado at Boulder
+    \item Michael Rießler, Albert-Ludwigs-Universität Freiburg
+    \item Miikka Silfverberg, University of Helsinki
+    \item Tommi A. Pirinen, Universität Hanmburg
+    \item Trond Trosterud, UiT Norgga árktalaš universitehta
+    \item Veronika Vincze, Szegedi tudományegyetem
+    \item Марина Серафимовна Федина, Финн-йӧгра кывъяслы информатика отсӧг кузя регионкостса лаборатория
+    \item Тимофей Архангельский, Национальный исследовательский университет "Высшая школа экономики"
 \end{itemize}
 
 \tableofcontents
@@ -102,7 +155,9 @@ Conference organisers,\\
 \mainmatter
 
 \chapter{Invited speeches}
-\section{LT Estonian}
+\section{Language technology in Tartu: dreams and realities}
+
+Presented by Heiki-Jaan Kaalep, from University of Tartu, Estonia.
 
 \renewcommand\thedoi{doidoi}
 \includepdf[scale=0.9,addtotoc={
