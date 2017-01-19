@@ -1,0 +1,13 @@
+abbrev		IWCLUL
+type		WORKSHOP
+title 		Third Workshop on Computational Linguitics of Uralic Languages
+url		http://acl-sigur.github.io/iwclul2017.eng.html
+booktitle	Proceedings of the Third Workshop on Computational Linguistics for Uralic Languages
+month		January
+year		2017
+location	St. Petersburg, Russia
+chairs		Francis M. Tyers (Arctic University of Norway)
+chairs		Michael Rießler (University of Freiburg)
+chairs		Tommi A. Pirinen (University of Hamburg)
+chairs		Trond Trosterud (Arctic University of Norway)
+bib_url		http://www.aclweb.org/anthology/W/W17/W17-00%02d

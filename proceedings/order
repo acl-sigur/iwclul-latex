@@ -1,0 +1,28 @@
+# Edit this file:
+# reorder the lines that correspond to papers
+#   and modify time slot, e.g. 9:00--9:30
+# add lines for
+#   start of new day, format: * DAY
+#   session headline, format: = HEADLINE
+#   additional items, format: + TIME DESCRIPTION
+* Monday, January 23, 2017
++ 10:00--10:15 Opening Remarks
++ 10:15--11:30 Invited Talk by Heiki-Jaan Kaalep
+= Session 1: Poster boasters
+5 11:30--11:33 # Rueter: Synchronized Mediawiki based a...
+6 11:33--11:36 # Rueter: DEMO: Giellatekno Open-source ...
+10 11:36--11:39 # Simon: Languages under the influence:...
+8 11:39--11:42 # Gerstenberger: Instant Annotations \textendas...
++ 11:45--12:30 Posters and Coffee
++ 12:30--14:00 Lunch
+= Session 2: Oral presentations
+1 14:00--14:30 # Chaminade: Preliminary Experiments concer...
+2 14:30--15:00 # Horv\'{a}th: Language technology resources ...
+3 15:00--15:30 # M. Tyers: Annotation schemes in North S\...
+9 15:30--16:00 # Reino Trosterud: A morphological analyser for K...
++ 16:00--16:30 LRE Map, LR Matrices and LR Impact Factor
++ 16:30--17:15 Posters, demos and coffee
++ 17:15--18:30 ACL SIGUR business meeting
++ 19:00--late Conference Dinner
+* Tuesday, January 24, 2017
++ 10:00--18:00 Round tables, discussions and workshopping

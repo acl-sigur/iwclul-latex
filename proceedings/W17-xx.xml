@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<volume id='W17'>
+  <paper id="xx00">
+    <title>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</title>
+    <editor>Tommi A Pirinen</editor>
+    <editor>Francis M. Tyers</editor>
+    <editor>Trond Trosterud</editor>
+    <editor>Michael Rießler</editor>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages' SIG for Uralic languages</publisher>
+    <url>http://www.aclweb.org/anthology/W17-xx</url>
+    <doi>10.3115/v1/W17-XX</doi>
+    <bibtype>book</bibtype>
+    <bibkey>IWCLUL:2017</bibkey>
+  </paper>
+
+  <paper id="xx01">
+    <title>Synchronized Mediawiki based analyzer dictionary development</title>
+    <author><first>Jack</first><last>Rueter</last></author>
+    <author><first>Mika</first><last>Hämäläinen</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages' SIG for Uralic languages</publisher>
+    <pages>1&#8211;7</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx01</url>
+    <doi>10.3115/v1/W17-xx01</doi>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>rueter-hamalainen:2017:ACL-IJCNLP</bibkey>
+  </paper>
+
+  <paper id="xx02">
+    <title>DEMO: Giellatekno Open-source click-in-text dictionaries for bringing closely related languages into contact</title>
+    <author><first>Jack</first><last>Rueter</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages</publisher>
+    <pages>8&#8211;9</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx02</url>
+    <doi>10.3115/v1/W17-xx02</doi>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>rueter:2017:IWCLUL</bibkey>
+  </paper>
+
+  <paper id="xx03">
+    <title>Languages under the influence: Building a database of Uralic languages</title>
+    <author><first>Eszter</first><last>Simon</last></author>
+    <author><first>Nikolett</first><last>Mus</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages</publisher>
+    <pages>10&#8211;24</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx03</url>
+    <doi>10.3115/v1/W17-xx03</doi>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>simon-mus:2017:IWCLUL</bibkey>
+  </paper>
+
+  <paper id="xx04">
+    <title>Instant Annotations ̣– Applying NLP Methods to the  Annotation of Spoken Language Documentation Corpora</title>
+    <author><first>Ciprian</first><last>Gerstenberger</last></author>
+    <author><first>Niko</first><last>Partanen</last></author>
+    <author><first>Michael</first><last>Rießler</last></author>
+    <author><first>Joshua</first><last>Wilbur</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages</publisher>
+    <pages>25&#8211;36</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx04</url>
+    <doi>10.3115/v1/W17-xx04</doi>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>gerstenberger-EtAl:2017:IWCLUL</bibkey>
+  </paper>
+
+  <paper id="xx05">
+    <title>Preliminary Experiments concerning Verbal Predicative Structure Extraction from a Large Finnish Corpus</title>
+    <author><first>Guersande</first><last>Chaminade</last></author>
+    <author><first>Poibeau</first><last>Thierry</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages</publisher>
+    <pages>37&#8211;55</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx05</url>
+    <doi>10.3115/v1/W17-xx05</doi>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>chaminade-poibeau:2017:IWCLUL</bibkey>
+  </paper>
+
+  <paper id="xx06">
+    <title>Language technology resources and tools for Mansi: an overview</title>
+    <author><first>Csilla</first><last>Horváth</last></author>
+    <author><first>Norbert</first><last>Szilágyi</last></author>
+    <author><first>Veronika</first><last>Vincze</last></author>
+    <author><first>Ágoston</first><last>Nagy</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages</publisher>
+    <pages>56&#8211;65</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx06</url>
+    <doi>10.3115/v1/W17-xx06</doi>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>horvath-EtAl:2017:IWCLUL</bibkey>
+  </paper>
+
+  <paper id="xx07">
+    <title>Annotation schemes in North Sámi dependency parsing</title>
+    <author><first>Francis M.</first><last>Tyers</last></author>
+    <author><first>Mariya</first><last>Sheyanova</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages</publisher>
+    <pages>66&#8211;75</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx07</url>
+    <doi>10.3115/v1/W17-xx07</doi>
+    <video href="http://techtalks.tv/talks/multigrancnn-an-architecture-for-general-matching-of-text-chunks-on-multiple-levels-of-granularity/61685/" tag="video"/>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>mtyers-sheyanova:2017:IWCLUL</bibkey>
+  </paper>
+
+  <paper id="xx08">
+    <title>A morphological analyser for Kven</title>
+    <author><first>Sindre Reino</first><last>Trosterud</last></author>
+    <author><first>Trond</first><last>Trosterud</last></author>
+    <author><first>Anna-Kaisa</first><last>Räisänen</last></author>
+    <author><first>Leena</first><last>Niiranen</last></author>
+    <booktitle>Proceedings of the 3rd International Workshop for Computational Linguistics of Uralic Languages</booktitle>
+    <month>January</month>
+    <year>2017</year>
+    <address>St. Petersburg, Russia</address>
+    <publisher>Association for Computational Linguistics' SIG for Uralic languages</publisher>
+    <pages>76&#8211;88</pages>
+    <url>http://www.aclweb.org/anthology/W17-xx08</url>
+    <doi>10.3115/v1/W17-xx08</doi>
+    <video href="http://techtalks.tv/talks/weakly-supervised-models-of-aspect-sentiment-for-online-course-discussion-forums/61687/" tag="video"/>
+    <bibtype>inproceedings</bibtype>
+    <bibkey>reinotrosterud-EtAl:2017:IWCLUL</bibkey>
+  </paper>
+
+
+</volume>
