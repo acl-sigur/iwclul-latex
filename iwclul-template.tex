@@ -7,6 +7,7 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{expex}
+\usepackage{natbib}
 
 \makeatletter
 \def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
@@ -18,6 +19,7 @@
 
 % Please keep this false for submission version, true for camera-ready
 \newif\ifcameraready
+%\camerareadyfalse
 \camerareadytrue
 
 \begin{document}
@@ -26,7 +28,7 @@
 \pagestyle{empty}
 \fi
 
-\title{Template for IWCLUL 2017 Workshop Proceedings\blfootnote{
+\title{Template for IWCLUL Workshop Proceedings\blfootnote{
     This work is licensed under a Creative Commons Attribution
     4.0 International Licence.  Licence details:
     \url{http://creativecommons.org/licenses/by/4.0/}
@@ -50,7 +52,9 @@ Department or School\\
 \date{}
 
 \maketitle
-\thispagestyle{empty}
+\ifcameraready
+\pagestyle{empty}
+\fi
 
 \begin{abstract}
     Abstract can be between 150 and 300 words long. Separate keywords are not
@@ -94,8 +98,7 @@ texlive-\{xetex,latex-recommended,fonts-recommended\} fonts-linux-libertine}.
 
 To ease the work with licences and permissions, all submissions should retain
 a footnote acknowledging that work is to be published under Creative
-Commons Attribution-NoDerivatives 4.0 International Licence. This way we do not
-need additional copyright forms.
+Commons Attribution 4.0 International Licence.
 
 \section{Formatting Instructions}
 
@@ -133,11 +136,16 @@ borders.
     \label{table:example}}
 \end{table}
 
-Citations are made using bibtex: WALS~\cite{haspelmath2005world} is a good book.
-It is possible to cite Russians using plain unicode, such as the original
-version of Levenshtein algorithm~\cite{levenshtein1965}.
-Use bibliographystyle unsrt. If you get your bibtex snippets from google
-scholar, don't forget to double check the data and add missing parts.
+Citations are made using bibtex: WALS~\citep{haspelmath2005world} is a good
+resource.  It is possible to cite Russians using plain unicode, such as the
+original version of \citet{levenshtein1965} algorithm.  Use
+bibliographystyle \texttt{acl\_natbib}. If you get your bibtex snippets from google
+scholar, don't forget to double check the data and add missing parts.  For
+software and language technology resources, it is possible to use one of the
+modern repository systems' citations, such as referring to omorfi:\footnote{for
+freely available and open source resources it is also recommended to give a link
+in footnote: \url{https://github.com/flammie/omorfi}} using LINDAT repository
+like this~\citep{omorfi}.
 
 Code examples, program listings and shell sessions can be shown as figures,
 e.g. figure~\ref{code:analysis}.

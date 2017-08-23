@@ -1,12 +1,11 @@
 
 .PHONY: all
 
-all: 2017-iwclul-template.pdf \
-	2017-iwclul-template.zip \
-	2017-iwclul-template.tar.xz \
-	2017-iwclul-template.tar.bz2 \
-	2017-iwclul-template.tar.gz \
-	2017-iwclul-preproceedings.pdf
+all: iwclul-template.pdf \
+	iwclul-template.zip \
+	iwclul-template.tar.xz \
+	iwclul-template.tar.bz2 \
+	iwclul-template.tar.gz
 
 %.pdf: %.tex
 	xelatex $<
@@ -15,17 +14,17 @@ all: 2017-iwclul-template.pdf \
 	xelatex $<
 	xelatex $<
 
-2017-iwclul-template.zip: 2017-iwclul-template.tex iwclul.bib Makefile
+iwclul-template.zip: iwclul-template.tex iwclul.bib Makefile
 	zip $@ $^
 
-2017-iwclul-template.tar.gz: 2017-iwclul-template.tex iwclul.bib Makefile
+iwclul-template.tar.gz: iwclul-template.tex iwclul.bib Makefile
 	tar zcvf $@ $^
 
-2017-iwclul-template.tar.bz2: 2017-iwclul-template.tex iwclul.bib Makefile
+iwclul-template.tar.bz2: iwclul-template.tex iwclul.bib Makefile
 	tar jcvf $@ $^
 
-2017-iwclul-template.tar.xz: 2017-iwclul-template.tex iwclul.bib Makefile
+iwclul-template.tar.xz: iwclul-template.tex iwclul.bib Makefile
 	tar Jcvf $@ $^
 
 clean:
-	-rm -f *.log *.bbl *.aux 2017-iwclul-template.pdf
+	-rm -f *.log *.bbl *.aux iwclul-template.pdf
