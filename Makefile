@@ -1,4 +1,6 @@
 
+FILES=iwclul-template.tex iwclul.bib Makefile acl_natbib.bst
+
 .PHONY: all
 
 all: iwclul-template.pdf \
@@ -14,16 +16,16 @@ all: iwclul-template.pdf \
 	xelatex $<
 	xelatex $<
 
-iwclul-template.zip: iwclul-template.tex iwclul.bib Makefile
+iwclul-template.zip: $(FILES)
 	zip $@ $^
 
-iwclul-template.tar.gz: iwclul-template.tex iwclul.bib Makefile
+iwclul-template.tar.gz: $(FILES)
 	tar zcvf $@ $^
 
-iwclul-template.tar.bz2: iwclul-template.tex iwclul.bib Makefile
+iwclul-template.tar.bz2: $(FILES)
 	tar jcvf $@ $^
 
-iwclul-template.tar.xz: iwclul-template.tex iwclul.bib Makefile
+iwclul-template.tar.xz: $(FILES)
 	tar Jcvf $@ $^
 
 clean:
