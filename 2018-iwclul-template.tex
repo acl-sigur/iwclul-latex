@@ -1,0 +1,224 @@
+\documentclass[a4paper,notitlepage]{article}
+
+\usepackage{polyglossia}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{expex}
+\usepackage{natbib}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\setmainfont[Mapping=tex-text]{Linux Libertine O}
+\setmainlanguage{english}
+\setotherlanguages{finnish,russian}
+
+% Please keep this false for submission version, true for camera-ready
+\newif\ifcameraready
+%\camerareadyfalse
+\camerareadytrue
+
+\begin{document}
+
+\ifcameraready
+\pagestyle{empty}
+\fi
+
+\title{Template for IWCLUL Workshop Proceedings\blfootnote{
+    This work is licensed under a Creative Commons Attribution
+    4.0 International Licence.  Licence details:
+    \url{http://creativecommons.org/licenses/by/4.0/}
+}
+}
+
+\ifcameraready
+\author{First Author\\
+University or Affiliation\\
+Department or School\\
+(Optionally Post Address)\\
+\url{first.author@example.com} \and
+Second Author\\
+University or Affiliation\\
+Department or School\\
+(Optionally Post Address)\\
+\url{second.author@example.com}
+}
+\fi
+
+\date{}
+
+\maketitle
+\ifcameraready
+\thispagestyle{empty}
+\fi
+
+\begin{abstract}
+    Abstract can be between 150 and 300 words long. Separate keywords are not
+    used. Reviewers use abstract to decide which articles to review and readers
+    will use abstract to decide which articles to read, so make it informative
+    and interesting.
+\end{abstract}
+
+{
+\selectlanguage{finnish}
+\begin{abstract}
+    Abstrakti pitäisi kirjoittaa myös suomeksi tai jollain muulla uralilaisella
+    kielellä.
+\end{abstract}
+}
+
+{
+\selectlanguage{russian}
+\begin{abstract}
+Вы также можете написать на русском языке
+\end{abstract}
+}
+
+
+\section{Introduction}
+
+This template is for authors submitting papers to the International Workshop on
+Computational Linguistics for Uralic Languages. The papers to be submitted
+should be in PDF format made using \XeLaTeX{} and use this tex template.  The
+documentclass is \texttt{article} with \texttt{a4paper} option.  The standard
+xelatex packages including polyglossia should be loaded for all papers. If
+possible, use Linux Libertine (or Linux Libertine O) as mainfont.  This is a
+freely available font with good range of unicode support and small-caps for
+Leipzig glossing.  Authors who are unable to use freely available
+\texttt{xelatex} should contact the conference organisers for other options.
+Additional information and recent updates to this template are available from
+\url{http://acl-sigur.github.io/}. The submissions are handled using easychair.
+Please note that the published version will be processed using ACLPUB system
+to make a publication in the ACL Anthology, the published version will
+be scaled and resized.
+Required tex packages should be in your texlive distribution, for ubuntu use:
+\texttt{sudo apt-get install
+texlive-\{xetex,latex-recommended,fonts-recommended\} fonts-linux-libertine}.
+
+
+\section{Title page}
+
+The title page should be as made with latex maketitle command. Do not include
+author names for the review version submission, we use blind review process. If
+you are using our latex template, just make sure to uncomment the command
+\texttt{camerareadyfalse}.
+
+To ease the work with licences and permissions, all submissions must retain
+a footnote acknowledging that work is to be published under Creative
+Commons Attribution 4.0 International Licence.
+
+\section{Emphasis}
+
+Follow common English typographical standards. The \emph{emphasis} is used for
+sentence level highlights and \textbf{strong emphasis} for paragraph level
+highlights.
+
+\section{Glossing}
+
+Linguistic glosses should follow Leipzig Glossing rules
+\url{http://www.eva.mpg.de/lingua/resources/glossing-rules.php}, see (\nextx).
+
+\ex
+\begingl
+\gla talo-i-ssa-ni //
+\glb house-{\sc Pl}-{\sc Ine}-{\sc 1sg} //
+\glft `in my houses' //
+\endgl
+\xe
+
+For inline examples, use emphasis for original and parentheses for translation
+\emph{talossasi} (in your house).
+
+
+\section{Tables}
+
+Tables like table~\ref{table:example}. should have caption underneath and
+borders.
+
+\begin{table}
+    \center
+    \begin{tabular}{|l|r|}
+        \hline
+        \bf Header & \bf Header \\
+        \hline
+        \bf Header & Data \\
+        \hline
+    \end{tabular}
+    \caption{The rows are things and columns stuff and data is in percent units
+    \label{table:example}}
+\end{table}
+
+\section{Citations}
+
+Citations are made using bibtex: WALS~\citep{haspelmath2005world} is a good
+resource.  It is possible to cite Russians using plain unicode, such as the
+original version of \citet{levenshtein1965} algorithm.  Use bibliographystyle
+\texttt{acl\_natbib}. If you get your bibtex snippets from google scholar, don't
+forget to double check the data and add missing parts.  For software and
+language technology resources, it is possible to use one of the modern
+repository systems' citations, such as referring to omorfi:\footnote{for freely
+available and open source resources it is also recommended to give a link in
+footnote: \url{https://github.com/flammie/omorfi}} using LINDAT repository like
+this~\citep{omorfi}.
+
+\section{Program code and command-lines}
+
+Code examples, program listings and shell sessions can be shown as figures,
+e.g. figure~\ref{code:analysis}.
+Pseudo-code may be formatted using one of the relevant \LaTeX{} packages, e.g.,
+\texttt{algorithm}.
+
+\begin{figure}
+    \center
+    \begin{verbatim}
+    $ hfst-lookup src/morphology.ftb3.hfst
+    > talossani
+    talossani talo+N+Sg+Ine+PxSg1
+    \end{verbatim}
+    \caption{Analysing Finnish from command-line with \texttt{hfst-lookup}
+    \label{code:analysis}}
+\end{figure}
+
+\section{Mathematical formulas}
+
+Inline formulas should use standard tex environment: $P(\mathrm{is}) >
+P(\mathrm{unlikely})$. Pay attention to the use of roman font for text examples
+and multicharacter variables and indexes. Long formulas should be numbered in
+equation block:
+
+\begin{equation}
+    P(\hat x) = \frac{x+\alpha}{y+\alpha\times z}
+\end{equation}
+
+Remember to describe each function, variable and notation you use.
+
+\section{Spelling}
+
+Please try a splel-checker before submitting your texts.
+
+\section{Camera-ready version}
+
+Once you have been accepted for publication, please go through the reviewers
+suggestions, and prepare a camera-ready version for publication. If you use our
+latex template, simply uncomment the \texttt{camerareadytrue} command. The
+camera ready version must not contain page numbering, must include the authors'
+names and affiliations, and may contain an additional acknowledgments section.
+Please upload the camera ready version as PDF to easychair by the given
+deadline.
+
+\ifcameraready
+\section*{Acknowledgments}
+
+Acknowledgments should be un-numbered last section. Do not include
+acknowledgements in anonymised review version.
+\fi
+
+\bibliographystyle{acl_natbib}
+\bibliography{iwclul}
+
+\end{document}
+
