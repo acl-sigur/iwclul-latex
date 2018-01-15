@@ -1,5 +1,6 @@
 \documentclass[a4paper,notitlepage]{article}
 
+% inlcude all these packages unless you have reason not to...
 \usepackage{polyglossia}
 \usepackage{fontspec}
 \usepackage{xunicode}
@@ -9,11 +10,14 @@
 \usepackage{expex}
 \usepackage{natbib}
 
+% Make licence footnote without marker
 \makeatletter
 \def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
 \makeatother
 
+% Use a Free/Libre font with Finnish–Hungarian-Cyrillic-UPA coverage
 \setmainfont[Mapping=tex-text]{Linux Libertine O}
+% set languages to use
 \setmainlanguage{english}
 \setotherlanguages{finnish,russian}
 
