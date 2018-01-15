@@ -17,10 +17,14 @@
 \setmainlanguage{english}
 \setotherlanguages{finnish,russian}
 
-% Please keep this false for submission version, true for camera-ready
+% This makes it easier to create anonymised and final versions with one change:
 \newif\ifcameraready
+%%% *** Uncomment the following line for the for-review submission
 %\camerareadyfalse
+%%% *** Uncomment the following line for the for-publication submission
 \camerareadytrue
+%%% and comment the other line so as to only have one of the above statements
+%%% uncommented
 
 \begin{document}
 
@@ -102,10 +106,10 @@ texlive-\{xetex,latex-recommended,fonts-recommended\} fonts-linux-libertine}.
 
 \section{Title page}
 
-The title page should be as made with latex maketitle command. Do not include
-author names for the review version submission, we use blind review process. If
-you are using our latex template, just make sure to uncomment the command
-\texttt{camerareadyfalse}.
+The title page should be as made with latex maketitle command. \textbf{Do not
+include author names for the review version submission}, we use blind review
+process. If you are using our latex template, just make sure to uncomment the
+command \texttt{camerareadyfalse}.
 
 To ease the work with licences and permissions, all submissions must retain
 a footnote acknowledging that work is to be published under Creative
