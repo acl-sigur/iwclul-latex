@@ -12,26 +12,27 @@ ACLPUB is a perl+make thing for making ACL publications, it is integrated with
 START softconf which SIGUR doesn't use. And the information on how to use is
 quite hard to find from the net (2016–2018). Here's a list of references I used:
 
-* https://github.com/naacl-org/aclpub
+* https://github.com/acl-org/acl-pub
+  * https://github.com/naacl-org/aclpub
 * http://naacl.org/naacl-pubs/aclpub-howto-2010.html
 * http://wwwusers.di.uniroma1.it/~faralli/acl2013/publication/howto/aclpub/ACLPUB-0.htm
 * https://github.com/acl-org/acl-pub/blob/gh-pages/002.book.md
 
 ## How to ACLPUB IWCLULs
 
-This is kind of a check-list based on IWCLULs 2017 and 2018.
+This is kind of a check-list based on IWCLULs 2017 and 2018 and 2019.
 
 1. ask your co-organisers to start writing pre-face, earlier is better.
 1. before CfP, notify ACL publication person (see the footer of
    http://aclanthology.info)
 1. send another note to them, around review period, ask for the URL that has
    WXX-YY%02d code.
-1. clone aclpub, iwclul-latex, and download paper pdfs (in easychair you can
+1. clone acl-pub, iwclul-latex, and download paper pdfs (in easychair you can
    fetch one zip file)
    1. when you download camera-readies once, they should be final; late changes
       are not that easy to re-integrate
-1. `export ACLPUB=` wherever its cloned
-1. in iwlul-latex, copy aclpub/proceedings to proceedings and symlink to
+1. `export ACLPUB=` wherever its cloned (2019 it is in `acl-pub/assets/files/create_book/` cause why not)
+1. in iwlul-latex, copy acl-pub/assets/files/ to proceedings and symlink to
    proceedings-YEAR
 1. now in proceedings, `make perl-modules` (i.e. follow ACLPUB-0 instructions
    starting from "Get Software" onwards).
@@ -41,7 +42,7 @@ This is kind of a check-list based on IWCLULs 2017 and 2018.
     1. Install PyPDF2 and python module `unicode_tex`. May need pip
 1. When following easy2acl, there are some potential copy-paste errors.
     1. I did `s/\. /\t/` here and `awk '{print $1, $3, $2, $4;}'`
-1. Check that latex codes for characters are correct.
+1. Check that latex codes for characters are correct. This is in files like `db`
 1. `make draft` and see `book.pdf`.
     1. Check stuff and fix (names, alignments, margins, focus...)
 1. `make get-order` and `vim order`
