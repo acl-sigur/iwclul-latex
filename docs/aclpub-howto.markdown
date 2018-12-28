@@ -45,6 +45,7 @@ This is kind of a check-list based on IWCLULs 2017 and 2018 and 2019.
 1. Check that latex codes for characters are correct. This is in files like `db`
 1. `make draft` and see `book.pdf`.
     1. Check stuff and fix (names, alignments, margins, focus...)
+    1. Don't mind that at this point in time, the order, the schedule and all the first few title pages are wrong
 1. `make get-order` and `vim order`
     1. This is just a lot of manual work, self-explanatory
 1. `make draft` and see `book.pdf` and check again
