@@ -1,5 +1,5 @@
 
-FILES=iwclul-template.tex iwclul.bib Makefile acl_natbib.bst
+FILES=iwclul-template.tex iwclul.bib Makefile acl_natbib.bst acl2018.sty
 
 .PHONY: all
 
