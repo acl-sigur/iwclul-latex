@@ -1,17 +1,16 @@
----
-layout: default
-title: ACLPUB with easychair for IWCLUL organisers
----
-
 # HOWTO: use ACLPUB with easy chair for external SIG workshop
 
-This is an informal documentation *instructions for using ACLPUB for ACL SIGUR
-proceedings doer-person*.
+This is a practical HOWTO for the **Editor(s)** who will send the **book** to
+ACL for publication. If you are an author of an article, please see the
+[Call for
+Papers](https://github.com/acl-sigur/iwclul-latex/blob/master/README.md)
+instead.
 
 ACLPUB is a perl+make thing for making ACL publications, it is integrated with
 START softconf which SIGUR doesn't use. And the information on how to use is
-quite hard to find from the net (2016–2018). Here's a list of references I used:
+quite hard to find from the net (2016–2021). Here's a list of references I used:
 
+* https://github.com/acl-org/ACLPUB
 * https://github.com/acl-org/acl-pub
   * https://github.com/naacl-org/aclpub
 * http://naacl.org/naacl-pubs/aclpub-howto-2010.html
@@ -25,23 +24,31 @@ This is kind of a check-list based on IWCLULs 2017 and 2018 and 2019.
 1. ask your co-organisers to start writing pre-face, earlier is better.
 1. before CfP, notify ACL publication person (see the footer of
    http://aclanthology.info)
-1. send another note to them, around review period, ask for the URL that has
-   WXX-YY%02d code.
-1. clone acl-pub, iwclul-latex, and download paper pdfs (in easychair you can
+1. Send a message to ACL treasurer to ask for ISBN (this is important for some
+   university funders)
+1. clone ACLPUB, iwclul-latex, and download paper pdfs (in easychair you can
    fetch one zip file)
    1. when you download camera-readies once, they should be final; late changes
-      are not that easy to re-integrate
-1. `export ACLPUB=` wherever its cloned (2019 it is in `acl-pub/assets/files/create_book/` cause why not)
-1. in iwlul-latex, copy acl-pub/assets/files/ to proceedings and symlink to
-   proceedings-YEAR
+   are not that easy to re-integrate
+   1. the file names must be `pdf/IWCLUL_paper_XXX.pdf` sometimes works with
+   easychairs and other times not...
+1. `export ACLPUB=` wherever its cloned (2021 it is in `ACLPUB/` but it seems to
+   change every f year)
+   1. also edit the Makefile to contain this `ACLPUB=fgrfrgae`
 1. now in proceedings, `make perl-modules` (i.e. follow ACLPUB-0 instructions
    starting from "Get Software" onwards).
     1. Text-PDF may not be in your distro, when manually installing, see:
       https://www.nntp.perl.org/group/perl.perl5.porters/2012/12/msg196450.html.
-1. Convert easychair to ACLPUB is here: https://github.com/nblomqvist/easy2acl
+1. Convert easychair to ACLPUB is here: https://github.com/acl-org/easy2acl
+  1. Because the official easy2acl does not do much (2021), use the older
+    version as well, otherwise you are missing db, and all the tex files and
+    lots of stuff: https://github.com/nblomqvist/easy2acl
     1. Install PyPDF2 and python module `unicode_tex`. May need pip
-1. When following easy2acl, there are some potential copy-paste errors.
-    1. I did `s/\. /\t/` here and `awk '{print $1, $3, $2, $4;}'`
+  1. Note that for ACL's easy2acl you need dummy files `pdf/IWCLUL-2021.pdf`
+    and `pdf/IWCLUL-2021_frontmatter.pdf` for the other easy2acl you must remove
+    them
+1. When following easy2acl, there are some potential copy-paste errors
+    1. I did `s/\. /\t/` here and `awk '{print $1, $3, $2, $4;}'` (pre-2020)
 1. Check that latex codes for characters are correct. This is in files like `db`
 1. `make draft` and see `book.pdf`.
     1. Check stuff and fix (names, alignments, margins, focus...)
